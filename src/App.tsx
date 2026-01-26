@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import beachBackground from './assets/beach-background.jpg'
+import beachBackgroundMobile from './assets/beach-background-mobile.jpg'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -11,39 +12,45 @@ function App() {
   }
 
   return (
-    <div className="container" style={{ backgroundImage: `url(${beachBackground})` }}>
+    <div 
+      className="container" 
+      style={{ 
+        '--bg-desktop': `url(${beachBackground})`,
+        '--bg-mobile': `url(${beachBackgroundMobile})`
+      } as React.CSSProperties}
+    >
       <div className="card-wrapper">
         {/* Biglietto di invito */}
         <div className={`invitation-card ${isOpen ? 'open' : ''}`}>
-          <div className="card-front" onClick={handleOpen} style={{ backgroundImage: `url(${beachBackground})` }}>
+          <div className="card-front" onClick={handleOpen}>
             <h1 className="front-title">Sei Invitat{isOpen ? 'o' : 'o'}</h1>
             <p className="front-subtitle">Clicca per aprire</p>
           </div>
           
-          <div className="card-inside" style={{ backgroundImage: `url(${beachBackground})` }}>
+          <div className="card-inside">
           <div className="card-content">
             <h2 className="welcome-message">Con grande gioia</h2>
             <p className="subtitle">vi invitiamo a celebrare con noi</p>
             
             <div className="couple-names">
-              <h3>[Nome Sposo]</h3>
+              <h3>Ornella</h3>
               <span className="heart">&</span>
-              <h3>[Nome Sposa]</h3>
+              <h3>Genny</h3>
             </div>
             
             <div className="wedding-date">
               <p className="date-label">Il giorno</p>
-              <p className="date">[Giorno] [Mese] [Anno]</p>
+              <p className="date">10 Giugno 2026</p>
             </div>
 
             <div className="links-section">
               <a 
-                href="https://maps.google.com/?q=VIA+ESEMPIO+LOCALITÀ" 
+                href="https://www.google.it/maps/place/Ammot+Caf%C3%A8/@40.9024271,14.0292486,17z/data=!3m1!4b1!4m6!3m5!1s0x133b1a751ea80751:0xe8b6cadf96c5a6c7!8m2!3d40.9024231!4d14.0314373!16s%2Fg%2F12hkmwfwy?coh=164777&entry=tt&shorturl=1" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="link-button venue-link"
               >
-                📍 Visualizza il Locale
+                📍 Ammot - Castel Volturno (CE)
               </a>
 
               <button 

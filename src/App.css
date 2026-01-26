@@ -16,6 +16,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .container {
@@ -25,6 +26,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0;
+  background-image: var(--bg-desktop);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,6 +37,13 @@ body {
   right: 0;
   bottom: 0;
   overflow: hidden;
+}
+
+/* Use mobile background on small screens */
+@media (max-width: 768px) {
+  .container {
+    background-image: var(--bg-mobile);
+  }
 }
 
 .container::before {
@@ -124,8 +133,6 @@ body {
   height: 100%;
   backface-visibility: hidden;
   transition: transform 1s ease-in-out;
-  background-size: cover;
-  background-position: center;
   border-radius: 15px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
@@ -158,18 +165,20 @@ body {
 }
 
 .front-title {
-  font-family: 'Georgia', serif;
-  font-size: 3rem;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
   color: #4A90E2;
   margin-bottom: 1rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  font-weight: 400;
 }
 
 .front-subtitle {
-  font-family: 'Georgia', serif;
-  font-size: 1.2rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
   color: #888;
   font-style: italic;
+  font-weight: 300;
 }
 
 .card-inside {
@@ -193,17 +202,19 @@ body {
 /* Contenuto interno */
 .card-content {
   text-align: center;
-  font-family: 'Georgia', serif;
+  font-family: 'Cormorant Garamond', serif;
   color: #333;
   position: relative;
   z-index: 1;
 }
 
 .welcome-message {
-  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
   color: #4A90E2;
   margin-bottom: 0.5rem;
   font-style: italic;
+  font-weight: 400;
 }
 
 .subtitle {
@@ -222,7 +233,8 @@ body {
 }
 
 .couple-names h3 {
-  font-size: 2rem;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8rem;
   color: #4A90E2;
   font-weight: 400;
 }
