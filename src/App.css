@@ -325,8 +325,9 @@
   }
   
   .card-wrapper {
-    height: 85vh;
-    max-height: none;
+    width: calc(100% - 2rem);
+    height: 75vh;
+    max-height: 600px;
   }
   
   .card-front::before,
@@ -373,8 +374,9 @@
   }
   
   .card-wrapper {
-    height: 90vh;
-    width: calc(100% - 1rem);
+    width: calc(100% - 1.5rem);
+    height: 80vh;
+    max-height: 650px;
   }
   
   .card-front::before,
