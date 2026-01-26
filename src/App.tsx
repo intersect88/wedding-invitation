@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import beachBackground from './assets/beach-background.jpg'
-import beachBackgroundMobile from './assets/beach-background-mobile.jpg'
+import beachBackgroundMobile from './assets/beach-background-mobile.png'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
