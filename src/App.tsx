@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import beachBackground from './assets/beach-background.jpg'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -10,16 +11,16 @@ function App() {
   }
 
   return (
-    <div className="container">
+    <div className="container" style={{ backgroundImage: `url(${beachBackground})` }}>
       <div className="card-wrapper">
         {/* Biglietto di invito */}
         <div className={`invitation-card ${isOpen ? 'open' : ''}`}>
-          <div className="card-front" onClick={handleOpen}>
+          <div className="card-front" onClick={handleOpen} style={{ backgroundImage: `url(${beachBackground})` }}>
             <h1 className="front-title">Sei Invitat{isOpen ? 'o' : 'o'}</h1>
             <p className="front-subtitle">Clicca per aprire</p>
           </div>
           
-          <div className="card-inside">
+          <div className="card-inside" style={{ backgroundImage: `url(${beachBackground})` }}>
           <div className="card-content">
             <h2 className="welcome-message">Con grande gioia</h2>
             <p className="subtitle">vi invitiamo a celebrare con noi</p>
