@@ -321,7 +321,7 @@
   }
   
   .container::before {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.2);
   }
   
   .card-wrapper {
@@ -331,7 +331,7 @@
   
   .card-front::before,
   .card-inside::before {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.5);
   }
   
   .front-title {
@@ -369,7 +369,7 @@
   }
   
   .container::before {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
   }
   
   .card-wrapper {
@@ -379,7 +379,7 @@
   
   .card-front::before,
   .card-inside::before {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.45);
   }
   
   .card-inside {
