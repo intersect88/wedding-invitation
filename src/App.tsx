@@ -101,20 +101,20 @@ function App() {
                 className="wedding-date" 
                 onClick={() => setShowCalendarMenu(!showCalendarMenu)}
               >
-                <p className="date-label"><span style={{fontSize: '2.5rem', marginRight: '8px'}}>🗓️</span> Il giorno</p>
+                <p className="date-label"><span className="icon-calendar">📆</span> Il giorno</p>
                 <p className="date">10 Giugno 2026</p>
                 <p className="date-label" style={{fontSize: '1.1rem', marginTop: '0.5rem'}}>Clicca per aggiungere al calendario</p>
               </button>
               {showCalendarMenu && (
                 <div className="calendar-menu">
                   <button onClick={addToGoogleCalendar} className="calendar-option">
-                    🌐 Google Calendar
+                    <span className="icon-globe">●</span> Google Calendar
                   </button>
                   <button onClick={addToAppleCalendar} className="calendar-option">
-                    🍎 Apple Calendar
+                    <span className="icon-apple">◆</span> Apple Calendar
                   </button>
                   <button onClick={addToOutlookCalendar} className="calendar-option">
-                    📧 Outlook Calendar
+                    <span className="icon-mail">✉</span> Outlook Calendar
                   </button>
                 </div>
               )}
@@ -128,7 +128,7 @@ function App() {
                 className="link-button venue-link"
               >
                 <div>
-                  📍 Ammot - Castel Volturno (CE)
+                  <span className="icon-location">📍</span> Ammot - Castel Volturno (CE)
                   <p style={{fontSize: '1.1rem', marginTop: '0.3rem', opacity: 0.8}}>Clicca per raggiungere il locale</p>
                 </div>
               </a>
@@ -139,14 +139,14 @@ function App() {
                 rel="noopener noreferrer"
                 className="link-button photo-link"
               >
-                📸 Condividi le tue Foto
+                <span className="icon-camera">📷</span> Condividi le tue Foto
               </a>
 
               <button 
                 className="link-button iban-link"
                 onClick={() => setShowIban(!showIban)}
               >
-                🎁 Regalo di Nozze
+                <span className="icon-gift">🎁</span> Regalo di Nozze
               </button>
 
               {showIban && (
