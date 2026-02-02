@@ -470,8 +470,10 @@ body {
   
   .card-wrapper {
     width: calc(100% - 1.5rem);
-    height: 80vh;
-    max-height: 650px;
+    height: 85vh;
+    max-height: none;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   
   .card-front::before,
