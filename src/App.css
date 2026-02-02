@@ -634,6 +634,8 @@ body::-webkit-scrollbar {
   
   .footer-message {
     font-size: 1.8rem;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1), -1px -1px 3px rgba(255, 255, 255, 0.9);
+    font-weight: 800;
   }
   
   .iban-code {
