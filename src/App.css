@@ -362,12 +362,13 @@ body::-webkit-scrollbar {
   padding-left: 25px;
 }
 
-.icon-calendar, .icon-globe, .icon-apple, .icon-mail, 
-.icon-location, .icon-camera, .icon-gift {
+.icon-svg {
+  width: 1.2em;
+  height: 1.2em;
   color: #3d6fa3;
-  font-size: 1.2em;
   margin-right: 8px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .date-label {

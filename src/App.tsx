@@ -101,20 +101,34 @@ function App() {
                 className="wedding-date" 
                 onClick={() => setShowCalendarMenu(!showCalendarMenu)}
               >
-                <p className="date-label"><span className="icon-calendar">📆</span> Il giorno</p>
+                <p className="date-label">
+                  <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/>
+                  </svg>
+                  Il giorno
+                </p>
                 <p className="date">10 Giugno 2026</p>
                 <p className="date-label" style={{fontSize: '1.1rem', marginTop: '0.5rem'}}>Clicca per aggiungere al calendario</p>
               </button>
               {showCalendarMenu && (
                 <div className="calendar-menu">
                   <button onClick={addToGoogleCalendar} className="calendar-option">
-                    <span className="icon-globe">●</span> Google Calendar
+                    <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                      <circle cx="12" cy="12" r="10"/>
+                    </svg>
+                    Google Calendar
                   </button>
                   <button onClick={addToAppleCalendar} className="calendar-option">
-                    <span className="icon-apple">◆</span> Apple Calendar
+                    <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                    </svg>
+                    Apple Calendar
                   </button>
                   <button onClick={addToOutlookCalendar} className="calendar-option">
-                    <span className="icon-mail">✉</span> Outlook Calendar
+                    <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    Outlook Calendar
                   </button>
                 </div>
               )}
@@ -128,7 +142,10 @@ function App() {
                 className="link-button venue-link"
               >
                 <div>
-                  <span className="icon-location">📍</span> Ammot - Castel Volturno (CE)
+                  <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                  Ammot - Castel Volturno (CE)
                   <p style={{fontSize: '1.1rem', marginTop: '0.3rem', opacity: 0.8}}>Clicca per raggiungere il locale</p>
                 </div>
               </a>
@@ -139,14 +156,20 @@ function App() {
                 rel="noopener noreferrer"
                 className="link-button photo-link"
               >
-                <span className="icon-camera">📷</span> Condividi le tue Foto
+                <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 15.2c-2.5 0-4.6-2.1-4.6-4.6S9.5 6 12 6s4.6 2.1 4.6 4.6-2.1 4.6-4.6 4.6zM9 2L7.2 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.2L15 2H9z"/>
+                </svg>
+                Condividi le tue Foto
               </a>
 
               <button 
                 className="link-button iban-link"
                 onClick={() => setShowIban(!showIban)}
               >
-                <span className="icon-gift">🎁</span> Regalo di Nozze
+                <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/>
+                </svg>
+                Regalo di Nozze
               </button>
 
               {showIban && (
