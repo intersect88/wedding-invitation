@@ -6,12 +6,25 @@ import beachBackgroundMobile from './assets/beach-background-mobile.png'
 function App() {
   const [isOpen, setIsOpen] = useState(false)
   const [showIban, setShowIban] = useState(false)
+  const [showCalendarMenu, setShowCalendarMenu] = useState(false)
 
   const handleOpen = () => {
     setIsOpen(true)
   }
 
-  const addToCalendar = () => {
+  const addToGoogleCalendar = () => {
+    const event = {
+      text: 'Matrimonio Ornella & Genny',
+      dates: '20260610T180000/20260611T020000',
+      details: 'Celebrazione del matrimonio presso Ammot - Castel Volturno (CE)',
+      location: 'Ammot Cafè, Castel Volturno (CE)'
+    }
+    const url = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.text)}&dates=${event.dates}&details=${encodeURIComponent(event.details)}&location=${encodeURIComponent(event.location)}`
+    window.open(url, '_blank')
+    setShowCalendarMenu(false)
+  }
+
+  const addToAppleCalendar = () => {
     const event = {
       title: 'Matrimonio Ornella & Genny',
       description: 'Celebrazione del matrimonio presso Ammot - Castel Volturno (CE)',
@@ -20,7 +33,6 @@ function App() {
       endDate: '2026-06-11T02:00:00'
     }
     
-    // Crea file .ics per il calendario
     const icsContent = [
       'BEGIN:VCALENDAR',
       'VERSION:2.0',
@@ -41,6 +53,20 @@ function App() {
     link.download = 'matrimonio-ornella-genny.ics'
     link.click()
     URL.revokeObjectURL(url)
+    setShowCalendarMenu(false)
+  }
+
+  const addToOutlookCalendar = () => {
+    const event = {
+      subject: 'Matrimonio Ornella & Genny',
+      startdt: '2026-06-10T18:00:00',
+      enddt: '2026-06-11T02:00:00',
+      body: 'Celebrazione del matrimonio presso Ammot - Castel Volturno (CE)',
+      location: 'Ammot Cafè, Castel Volturno (CE)'
+    }
+    const url = `https://outlook.live.com/calendar/0/deeplink/compose?subject=${encodeURIComponent(event.subject)}&startdt=${event.startdt}&enddt=${event.enddt}&body=${encodeURIComponent(event.body)}&location=${encodeURIComponent(event.location)}`
+    window.open(url, '_blank')
+    setShowCalendarMenu(false)
   }
 
   return (
@@ -70,11 +96,29 @@ function App() {
               <h3>Genny</h3>
             </div>
             
-            <button className="wedding-date" onClick={addToCalendar}>
-              <p className="date-label"><span style={{fontSize: '2.5rem', marginRight: '8px'}}>🗓️</span> Il giorno</p>
-              <p className="date">10 Giugno 2026</p>
-              <p className="date-label" style={{fontSize: '1.1rem', marginTop: '0.5rem'}}>Clicca per aggiungere al calendario</p>
-            </button>
+            <div className="calendar-button-wrapper">
+              <button 
+                className="wedding-date" 
+                onClick={() => setShowCalendarMenu(!showCalendarMenu)}
+              >
+                <p className="date-label"><span style={{fontSize: '2.5rem', marginRight: '8px'}}>🗓️</span> Il giorno</p>
+                <p className="date">10 Giugno 2026</p>
+                <p className="date-label" style={{fontSize: '1.1rem', marginTop: '0.5rem'}}>Clicca per aggiungere al calendario</p>
+              </button>
+              {showCalendarMenu && (
+                <div className="calendar-menu">
+                  <button onClick={addToGoogleCalendar} className="calendar-option">
+                    🌐 Google Calendar
+                  </button>
+                  <button onClick={addToAppleCalendar} className="calendar-option">
+                    🍎 Apple Calendar
+                  </button>
+                  <button onClick={addToOutlookCalendar} className="calendar-option">
+                    📧 Outlook Calendar
+                  </button>
+                </div>
+              )}
+            </div>
 
             <div className="links-section">
               <a 
