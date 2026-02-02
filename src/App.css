@@ -211,17 +211,19 @@ body {
 .welcome-message {
   font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
-  color: #2c5aa0;
+  color: #1a3a5c;
   margin-bottom: 0.5rem;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
 }
 
 .subtitle {
   font-size: 1.7rem;
-  color: #444;
+  color: #222;
   margin-bottom: 2rem;
-  font-weight: 500;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
 }
 
 .couple-names {
@@ -236,13 +238,15 @@ body {
 .couple-names h3 {
   font-family: 'Great Vibes', cursive;
   font-size: 3.5rem;
-  color: #2c5aa0;
-  font-weight: 400;
+  color: #1a3a5c;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(255,255,255,0.9);
 }
 
 .heart {
   font-size: 2rem;
-  color: #2c5aa0;
+  color: #1a3a5c;
+  font-weight: bold;
 }
 
 .wedding-date {
@@ -273,15 +277,17 @@ body {
 
 .date-label {
   font-size: 1.5rem;
-  color: #555;
+  color: #333;
   margin-bottom: 0.5rem;
-  font-weight: 500;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
 }
 
 .date {
   font-size: 2.6rem;
-  color: #2c5aa0;
-  font-weight: 600;
+  color: #1a3a5c;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
 }
 
 .links-section {
@@ -296,15 +302,16 @@ body {
   border: none;
   border-radius: 12px;
   background: transparent;
-  color: #2c5aa0;
+  color: #1a3a5c;
   font-size: 1.3rem;
   font-family: 'Georgia', serif;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
   display: block;
   text-align: center;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
   box-shadow: 
     0 6px 12px rgba(0, 0, 0, 0.15),
     0 2px 4px rgba(0, 0, 0, 0.1),
@@ -366,9 +373,10 @@ body {
 .footer-message {
   margin-top: 2rem;
   font-size: 1.8rem;
-  color: #444;
+  color: #222;
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
 }
 
 /* Responsive */
@@ -393,24 +401,36 @@ body {
   }
   
   .front-title {
-    font-size: 3.2rem;
+    font-size: 4rem;
   }
   
   .welcome-message {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
     font-size: 2rem;
   }
   
   .couple-names h3 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   
   .date {
-    font-size: 2rem;
+    font-size: 2.8rem;
+  }
+  
+  .date-label {
+    font-size: 1.8rem;
   }
   
   .link-button {
-    font-size: 1.2rem;
-    padding: 1.2rem 1.8rem;
+    font-size: 1.6rem;
+    padding: 1.5rem 2rem;
+  }
+  
+  .footer-message {
+    font-size: 2rem;
   }
   
   .shell-1, .shell-2, .shell-3 {
@@ -456,40 +476,48 @@ body {
   }
   
   .couple-names h3 {
-    font-size: 2.2rem;
+    font-size: 3.2rem;
   }
   
   .front-title {
-    font-size: 2.8rem;
+    font-size: 3.5rem;
   }
   
   .front-subtitle {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   
   .welcome-message {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
   }
   
   .subtitle {
-    font-size: 1.2rem;
-  }
-  
-  .date {
     font-size: 1.8rem;
   }
   
+  .date {
+    font-size: 2.5rem;
+  }
+  
   .date-label {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
   
   .link-button {
-    padding: 1.1rem 1.5rem;
-    font-size: 1.15rem;
+    padding: 1.4rem 1.8rem;
+    font-size: 1.5rem;
   }
   
   .footer-message {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+  }
+  
+  .iban-code {
+    font-size: 1.3rem;
+  }
+  
+  .iban-label {
+    font-size: 1.3rem;
   }
   
   .shell-1, .shell-2, .shell-3 {
