@@ -109,7 +109,7 @@ function App() {
                 <div className="iban-section">
                   <p className="iban-label">IBAN per il regalo:</p>
                   <p className="iban-code">IT00 X000 0000 0000 0000 0000 000</p>
-                  <p className="iban-note">Intestato a: [Nome Cognome]</p>
+                  <p className="iban-note">Intestato a: Paudice Genny, Ornella Annunziata</p>
                 </div>
               )}
             </div>
