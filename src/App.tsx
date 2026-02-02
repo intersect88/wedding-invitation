@@ -11,6 +11,38 @@ function App() {
     setIsOpen(true)
   }
 
+  const addToCalendar = () => {
+    const event = {
+      title: 'Matrimonio Ornella & Genny',
+      description: 'Celebrazione del matrimonio presso Ammot - Castel Volturno (CE)',
+      location: 'Ammot Cafè, Castel Volturno (CE)',
+      startDate: '2026-06-10T18:00:00',
+      endDate: '2026-06-11T02:00:00'
+    }
+    
+    // Crea file .ics per il calendario
+    const icsContent = [
+      'BEGIN:VCALENDAR',
+      'VERSION:2.0',
+      'BEGIN:VEVENT',
+      `DTSTART:${event.startDate.replace(/[-:]/g, '')}`,
+      `DTEND:${event.endDate.replace(/[-:]/g, '')}`,
+      `SUMMARY:${event.title}`,
+      `DESCRIPTION:${event.description}`,
+      `LOCATION:${event.location}`,
+      'END:VEVENT',
+      'END:VCALENDAR'
+    ].join('\n')
+    
+    const blob = new Blob([icsContent], { type: 'text/calendar' })
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = 'matrimonio-ornella-genny.ics'
+    link.click()
+    URL.revokeObjectURL(url)
+  }
+
   return (
     <div 
       className="container" 
@@ -38,10 +70,11 @@ function App() {
               <h3>Genny</h3>
             </div>
             
-            <div className="wedding-date">
-              <p className="date-label">Il giorno</p>
+            <button className="wedding-date" onClick={addToCalendar}>
+              <p className="date-label"><span style={{fontSize: '2.5rem', marginRight: '8px'}}>🗓️</span> Il giorno</p>
               <p className="date">10 Giugno 2026</p>
-            </div>
+              <p className="date-label" style={{fontSize: '1.1rem', marginTop: '0.5rem'}}>Clicca per aggiungere al calendario</p>
+            </button>
 
             <div className="links-section">
               <a 
@@ -50,23 +83,11 @@ function App() {
                 rel="noopener noreferrer"
                 className="link-button venue-link"
               >
-                📍 Ammot - Castel Volturno (CE)
-              </a>
-
-              <button 
-                className="link-button iban-link"
-                onClick={() => setShowIban(!showIban)}
-              >
-                💳 Lista Nozze
-              </button>
-
-              {showIban && (
-                <div className="iban-section">
-                  <p className="iban-label">IBAN per Lista Nozze:</p>
-                  <p className="iban-code">IT00 X000 0000 0000 0000 0000 000</p>
-                  <p className="iban-note">Intestato a: [Nome Cognome]</p>
+                <div>
+                  📍 Ammot - Castel Volturno (CE)
+                  <p style={{fontSize: '1.1rem', marginTop: '0.3rem', opacity: 0.8}}>Clicca per raggiungere il locale</p>
                 </div>
-              )}
+              </a>
 
               <a 
                 href="https://www.icloud.com/sharedalbum/" 
@@ -76,6 +97,21 @@ function App() {
               >
                 📸 Condividi le tue Foto
               </a>
+
+              <button 
+                className="link-button iban-link"
+                onClick={() => setShowIban(!showIban)}
+              >
+                🎁 Regalo di Nozze
+              </button>
+
+              {showIban && (
+                <div className="iban-section">
+                  <p className="iban-label">IBAN per il regalo:</p>
+                  <p className="iban-code">IT00 X000 0000 0000 0000 0000 000</p>
+                  <p className="iban-note">Intestato a: [Nome Cognome]</p>
+                </div>
+              )}
             </div>
 
             <p className="footer-message">Non vediamo l'ora di festeggiare con voi!</p>
