@@ -203,7 +203,7 @@ body::-webkit-scrollbar {
 .front-title {
   font-family: 'Great Vibes', cursive;
   font-size: 4.5rem;
-  color: #1a3a5c;
+  color: #3d6fa3;
   margin-bottom: 1rem;
   letter-spacing: 1px;
   font-weight: 700;
@@ -213,7 +213,7 @@ body::-webkit-scrollbar {
 .front-subtitle {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.8rem;
-  color: #1a3a5c;
+  color: #3d6fa3;
   font-style: italic;
   font-weight: 700;
   text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
@@ -249,7 +249,7 @@ body::-webkit-scrollbar {
 .welcome-message {
   font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
-  color: #1a3a5c;
+  color: #3d6fa3;
   margin-bottom: 0.5rem;
   font-style: italic;
   font-weight: 700;
@@ -258,7 +258,7 @@ body::-webkit-scrollbar {
 
 .subtitle {
   font-size: 1.7rem;
-  color: #1a3a5c;
+  color: #3d6fa3;
   margin-bottom: 2rem;
   font-weight: 700;
   text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
@@ -276,14 +276,14 @@ body::-webkit-scrollbar {
 .couple-names h3 {
   font-family: 'Great Vibes', cursive;
   font-size: 3.5rem;
-  color: #1a3a5c;
+  color: #3d6fa3;
   font-weight: 700;
   text-shadow: 1px 1px 3px rgba(255,255,255,0.9);
 }
 
 .heart {
   font-size: 2rem;
-  color: #1a3a5c;
+  color: #3d6fa3;
   font-weight: 700;
   text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
 }
@@ -355,7 +355,7 @@ body::-webkit-scrollbar {
   padding: 15px 20px;
   border: none;
   background: transparent;
-  color: #1a3a5c;
+  color: #3d6fa3;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.3rem;
   font-weight: 700;
@@ -376,7 +376,7 @@ body::-webkit-scrollbar {
 
 .date-label {
   font-size: 1.5rem;
-  color: #1a3a5c;
+  color: #3d6fa3;
   margin-bottom: 0.5rem;
   font-weight: 700;
   text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
@@ -384,7 +384,7 @@ body::-webkit-scrollbar {
 
 .date {
   font-size: 2.6rem;
-  color: #1a3a5c;
+  color: #3d6fa3;
   font-weight: 700;
   text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
 }
@@ -401,7 +401,7 @@ body::-webkit-scrollbar {
   border: none;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.45);
-  color: #1a3a5c;
+  color: #3d6fa3;
   font-size: 1.3rem;
   font-family: 'Georgia', serif;
   font-weight: 700;
@@ -450,7 +450,7 @@ body::-webkit-scrollbar {
 
 .iban-label {
   font-size: 1.2rem;
-  color: #1a3a5c;
+  color: #3d6fa3;
   margin-bottom: 0.5rem;
   font-weight: 700;
   text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
@@ -459,7 +459,7 @@ body::-webkit-scrollbar {
 .iban-code {
   font-size: 1.4rem;
   font-family: 'Courier New', monospace;
-  color: #1a3a5c;
+  color: #3d6fa3;
   font-weight: 700;
   margin: 0.5rem 0;
   word-break: break-all;
@@ -468,7 +468,7 @@ body::-webkit-scrollbar {
 
 .iban-note {
   font-size: 1.2rem;
-  color: #1a3a5c;
+  color: #3d6fa3;
   font-style: italic;
   font-weight: 700;
   text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
@@ -477,7 +477,7 @@ body::-webkit-scrollbar {
 .footer-message {
   margin-top: 2rem;
   font-size: 1.8rem;
-  color: #1a3a5c;
+  color: #3d6fa3;
   font-style: italic;
   font-weight: 700;
   text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
