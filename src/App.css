@@ -710,3 +710,8 @@ body::-webkit-scrollbar {
     font-size: 1.1rem;
   }
 }
+
+/* Ensure the entire invitation card uses the same display font */
+.invitation-card, .invitation-card * {
+  font-family: 'Playfair Display', serif !important;
+}
