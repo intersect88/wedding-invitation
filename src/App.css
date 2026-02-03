@@ -458,21 +458,23 @@ body::-webkit-scrollbar {
   justify-content: center;
 }
 
-.venue-content {
-  /* Stack the name row and the caption vertically, centered within the button */
+.venue-row {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.venue-content {
+  /* kept for backward compatibility, but use venue-row + venue-note markup now */
+  display: block;
 }
 
 .venue-inline {
-  /* Force the icon+name to occupy its own centered row */
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
-  width: 100%;
-  justify-content: center;
   white-space: nowrap;
 }
 

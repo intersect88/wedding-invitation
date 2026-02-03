@@ -152,17 +152,13 @@ function App() {
                 className="link-button venue-link"
                 aria-label="Apri Google Maps per Ammot"
               >
-                <div className="venue-content">
-                  <div className="venue-inline">
-                    <svg className="icon-svg venue-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                    </svg>
-                    <span className="venue-name">Ammot</span>
-                  </div>
-                  <div className="venue-text">
-                    <p className="venue-note" style={{fontSize: '1.05rem', marginTop: '0.15rem', opacity: 0.85}}>Clicca per raggiungere il locale</p>
-                  </div>
+                <div className="venue-row">
+                  <svg className="icon-svg venue-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                  <span className="venue-name">Ammot</span>
                 </div>
+                <p className="venue-note" style={{fontSize: '1.05rem', marginTop: '0.35rem', opacity: 0.85}}>Clicca per raggiungere il locale</p>
               </a>
 
                <a 
