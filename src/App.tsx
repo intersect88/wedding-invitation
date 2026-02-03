@@ -114,11 +114,11 @@ function App() {
                 <div className="calendar-menu">
                   <button onClick={addToGoogleCalendar} className="calendar-option">
                   {/* Google multicolor G (simplified) */}
-                  <svg className="icon-svg google-g" viewBox="0 0 48 48" aria-hidden="true" role="img">
-                    <path fill="#4285F4" d="M24 9.5c3.9 0 6.6 1.7 8.1 3.1l6-5.9C35.7 4 30.5 2 24 2 14.9 2 7.4 7.3 4 15.5l7.2 5.6C12.1 16.1 17.4 9.5 24 9.5z"/>
-                    <path fill="#34A853" d="M46.5 24c0-1.6-.2-2.9-.6-4.2H24v8.1h12.6c-.5 2.6-2 4.8-4.2 6.1l6 4.7C44.5 35.8 46.5 30.4 46.5 24z"/>
-                    <path fill="#FBBC05" d="M11.2 29.1c-.7-2- .7-4 .1-5.9L4 17.7C1.5 22.1 1.5 27.9 4 32.3l7.2-3.2z"/>
-                    <path fill="#EA4335" d="M24 46c6.5 0 11.7-2 15.5-5.4L33.5 35c-2 1.5-4.5 2.4-9.5 2.4-6.6 0-11.9-6.6-12.8-12.6L4 32.3C7.4 40.7 14.9 46 24 46z"/>
+                  <svg className="icon-svg google-g" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                    <path fill="#4285F4" d="M21.35 11.1h-1.7V9.4H12v5.2h5.7c-.25 1.1-.9 2.05-1.9 2.65v1.8h3.1c1.8-1.65 2.8-4.05 2.8-6.85 0-.6-.05-1.2-.15-1.95z"/>
+                    <path fill="#34A853" d="M12 21c2.43 0 4.47-.8 5.96-2.2l-3.1-1.85c-.85.57-1.9.9-2.86.9-2.2 0-4.05-1.47-4.7-3.44L2.6 16.9C4.6 19.9 8 21 12 21z"/>
+                    <path fill="#FBBC05" d="M6.3 12.45c-.2-.6-.3-1.25-.3-1.95s.1-1.35.3-1.95L3 7.1C2.15 8.9 1.7 10.9 1.7 13s.45 4.1 1.3 5.9l3-2.45z"/>
+                    <path fill="#EA4335" d="M12 4.5c1.32 0 2.5.45 3.4 1.35L18.9 5.5C16.95 3.6 14.6 2.7 12 2.7 8 2.7 4.6 3.8 2.6 6.8l3.3 2.65C7.95 8.1 9.8 4.5 12 4.5z"/>
                   </svg>
                   Google Calendar
                   </button>

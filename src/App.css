@@ -342,9 +342,11 @@ body::-webkit-scrollbar {
 }
 
 .calendar-option {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   width: 100%;
-  padding: 15px 20px;
+  padding: 12px 20px;
   border: none;
   background: transparent;
   color: #3d6fa3;
@@ -353,8 +355,8 @@ body::-webkit-scrollbar {
   font-weight: 700;
   text-align: left;
   cursor: pointer;
-  transition: all 0.3s ease;
-  border-bottom: 1px solid rgba(26, 58, 92, 0.1);
+  transition: all 0.15s ease;
+  border-bottom: 1px solid rgba(26, 58, 92, 0.06);
 }
 
 .calendar-option:last-child {
@@ -362,9 +364,12 @@ body::-webkit-scrollbar {
 }
 
 .calendar-option:hover {
-  background: rgba(26, 58, 92, 0.1);
-  padding-left: 25px;
+  background: rgba(26, 58, 92, 0.06);
+  transform: translateX(2px);
 }
+
+/* ensure calendar icons are aligned and consistent size */
+.calendar-option svg { flex: 0 0 1.6em; width: 1.6em; height: 1.6em; }
 
 .icon-svg {
   width: 1.2em;
