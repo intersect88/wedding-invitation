@@ -424,7 +424,9 @@ body::-webkit-scrollbar {
   text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
   box-shadow: 
@@ -440,12 +442,14 @@ body::-webkit-scrollbar {
   display: inline-flex; /* shrink to content so it sits inline and can be centered by the link */
   align-items: center;
   gap: 12px;
+  white-space: nowrap; /* keep icon and name on same line */
 }
 
 .venue-inline {
   display: flex;
   align-items: center;
   gap: 8px;
+  white-space: nowrap;
 }
 
 .venue-text {
