@@ -114,15 +114,7 @@ function App() {
                 <div className="calendar-menu">
                   <button onClick={addToGoogleCalendar} className="calendar-option">
                   <svg className="icon-svg google-g" viewBox="0 0 24 24" aria-hidden="true">
-                    <defs>
-                      <linearGradient id="g-grad" x1="0%" x2="100%" y1="0%" y2="100%">
-                        <stop offset="0%" stopColor="#4285F4" />
-                        <stop offset="50%" stopColor="#34A853" />
-                        <stop offset="75%" stopColor="#FBBC05" />
-                        <stop offset="100%" stopColor="#EA4335" />
-                      </linearGradient>
-                    </defs>
-                    <path fill="url(#g-grad)" d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10 5.24 0 9.55-4.04 9.95-9.2h-9.95v4.6h5.4C19.7 17.14 16.2 20 12 20 7.58 20 4 16.42 4 12s3.58-8 8-8c2.21 0 4.21.9 5.66 2.34L17 8h-5v4h9l2-2.5C22.32 6.86 17.46 2 12 2z"/>
+                    <text x="50%" y="50%" textAnchor="middle" dominantBaseline="central" fontFamily="Arial, Helvetica, sans-serif" fontSize="14" fill="currentColor">G</text>
                   </svg>
                   Google Calendar
                   </button>

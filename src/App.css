@@ -379,6 +379,7 @@ body::-webkit-scrollbar {
   width: 1.25em;
   height: 1.25em;
   margin-right: 10px;
+  color: #3d6fa3; /* use the project's icon color */
 }
 
 .date-label {
