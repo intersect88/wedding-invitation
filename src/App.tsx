@@ -155,8 +155,7 @@ function App() {
                   </svg>
                   <div className="venue-text">
                     <span className="venue-name">Ammot</span>
-                    <span className="venue-location">Castel Volturno (CE)</span>
-                    <p className="venue-note" style={{fontSize: '1.1rem', marginTop: '0.3rem', opacity: 0.8}}>Clicca per raggiungere il locale</p>
+                    <p className="venue-note" style={{fontSize: '1.05rem', marginTop: '0.35rem', opacity: 0.85}}>Clicca per raggiungere il locale</p>
                   </div>
                 </div>
               </a>
