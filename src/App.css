@@ -381,11 +381,7 @@ body::-webkit-scrollbar {
   width: 1.25em;
   height: 1.25em;
   margin-right: 10px;
-  /* allow multicolor fills */
 }
-
-/* Ensure the SVG path uses currentColor explicitly for all browsers */
-.google-g path { vector-effect: non-scaling-stroke; }
 
 .apple-g { width: 1.2em; height: 1.2em; margin-right: 10px; }
 .outlook-g { width: 1.2em; height: 1.2em; margin-right: 10px; }

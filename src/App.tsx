@@ -113,24 +113,20 @@ function App() {
               {showCalendarMenu && (
                 <div className="calendar-menu">
                   <button onClick={addToGoogleCalendar} className="calendar-option">
-                  <svg className="icon-svg google-g" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                    <path fill="#4285F4" d="M21.6 11.2v6.4c0 .9-.7 1.6-1.6 1.6H4c-.9 0-1.6-.7-1.6-1.6V6.4c0-.9.7-1.6 1.6-1.6h5.7v1.6H4v11.2h16v-4.1h-2.2V11.2h3.8z"/>
-                    <path fill="#34A853" d="M8 3.9c.9-.5 1.9-.9 3-.9 1 0 2.1.3 3 1l-1.5 1.4C11.8 5 10.9 4.9 10 4.9c-.8 0-1.6.1-2.4.4L8 3.9z"/>
-                    <path fill="#FBBC05" d="M19 8.4v1.2h-6.8v-3.4c1.2-.3 2.4-.3 3.6 0 1.1.3 2.2.9 3.2 2.2z"/>
-                    <path fill="#EA4335" d="M20.4 3.6l-1.6 1.6c-.9-.7-1.8-1.1-2.8-1.4 1.6-.6 3.3-.5 4.4.2z"/>
+                  <svg className="icon-svg google-g" viewBox="0 0 24 24" aria-hidden="true" role="img" fill="currentColor">
+                    <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM5 10h14v6H5v-6z" />
                   </svg>
                   Google Calendar
                   </button>
                   <button onClick={addToAppleCalendar} className="calendar-option">
-                    <svg className="icon-svg apple-g" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                      <path fill="#000" d="M16.365 1.43c0 1.02-.37 1.98-1.03 2.73-.71.8-1.95 1.53-3.17 1.33-.13-1.06.34-2.12 1.1-2.82.74-.68 1.86-1.08 3.1-.97zM12.6 6.6c.29.02.62.03.98.02 2.25-.04 4.03 1.4 4.86 2.13.97.9 1.59 2.2 1.58 3.59-.02 2.13-1.47 3.68-3.3 3.68-.91 0-1.92-.4-2.76-.4-.85 0-1.92.41-2.76.41-1.83 0-3.3-1.55-3.32-3.7-.02-1.36.62-2.6 1.64-3.49.72-.64 2.08-1.95 3.78-1.97.53-.01 1.04.02 1.78.03z"/>
+                    <svg className="icon-svg apple-g" viewBox="0 0 24 24" aria-hidden="true" role="img" fill="currentColor">
+                      <path d="M16.365 1.43c0 1.02-.37 1.98-1.03 2.73-.71.8-1.95 1.53-3.17 1.33-.13-1.06.34-2.12 1.1-2.82.74-.68 1.86-1.08 3.1-.97zM12.6 6.6c.29.02.62.03.98.02 2.25-.04 4.03 1.4 4.86 2.13.97.9 1.59 2.2 1.58 3.59-.02 2.13-1.47 3.68-3.3 3.68-.91 0-1.92-.4-2.76-.4-.85 0-1.92.41-2.76.41-1.83 0-3.3-1.55-3.32-3.7-.02-1.36.62-2.6 1.64-3.49.72-.64 2.08-1.95 3.78-1.97.53-.01 1.04.02 1.78.03z"/>
                     </svg>
                     Apple Calendar
                   </button>
                   <button onClick={addToOutlookCalendar} className="calendar-option">
-                    <svg className="icon-svg outlook-g" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                      <path fill="#0078D4" d="M22 7.5v9c0 .8-.7 1.5-1.5 1.5h-15C4.7 18 4 17.3 4 16.5v-9C4 6.7 4.7 6 5.5 6h15c.8 0 1.5.7 1.5 1.5z"/>
-                      <path fill="#fff" d="M7 9h10v6H7z"/>
+                    <svg className="icon-svg outlook-g" viewBox="0 0 24 24" aria-hidden="true" role="img" fill="currentColor">
+                      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM20 8l-8 5-8-5V6l8 5 8-5v2z" />
                     </svg>
                     Outlook Calendar
                   </button>
