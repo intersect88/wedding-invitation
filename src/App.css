@@ -382,6 +382,14 @@ body::-webkit-scrollbar {
   flex: 0 0 auto;
 }
 
+/* Slightly larger and vertically centered for the venue icon */
+.venue-icon {
+  width: 1.4em;
+  height: 1.4em;
+  margin-right: 6px;
+  display: inline-block;
+}
+
 .google-g {
   width: 1.5em;
   height: 1.5em;
@@ -452,9 +460,12 @@ body::-webkit-scrollbar {
 }
 
 .venue-inline {
-  display: inline-flex;
+  /* Force the icon+name to occupy its own centered row */
+  display: flex;
   align-items: center;
   gap: 10px;
+  width: 100%;
+  justify-content: center;
   white-space: nowrap;
 }
 
