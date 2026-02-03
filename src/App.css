@@ -344,14 +344,14 @@ body::-webkit-scrollbar {
 .calendar-option {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   width: 100%;
-  padding: 12px 20px;
+  padding: 18px 24px; /* increased cell size for better tap targets */
   border: none;
   background: transparent;
   color: #3d6fa3;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.3rem;
+  font-size: 1.35rem; /* slightly larger text */
   font-weight: 700;
   text-align: left;
   cursor: pointer;
@@ -369,7 +369,7 @@ body::-webkit-scrollbar {
 }
 
 /* ensure calendar icons are aligned and consistent size */
-.calendar-option svg { flex: 0 0 1.6em; width: 1.6em; height: 1.6em; }
+.calendar-option svg { flex: 0 0 1.9em; width: 1.9em; height: 1.9em; }
 
 .icon-svg {
   width: 1.2em;
