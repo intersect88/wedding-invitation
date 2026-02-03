@@ -425,6 +425,29 @@ body::-webkit-scrollbar {
   max-width: 650px;
 }
 
+.venue-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.venue-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.venue-name {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.venue-location {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-top: 2px;
+}
+
 .link-button:hover {
   background: rgba(255, 255, 255, 0.75);
   color: #1e3a70;
