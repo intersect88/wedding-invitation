@@ -451,6 +451,13 @@ body::-webkit-scrollbar {
   max-width: 650px;
 }
 
+/* Ensure the venue-specific button stacks content vertically inside the button */
+.venue-link {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .venue-content {
   /* Stack the name row and the caption vertically, centered within the button */
   display: flex;
@@ -474,6 +481,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
   align-items: center; /* center the caption under the name */
   width: 100%;
+  flex-basis: 100%;
 }
 
 .venue-name {
@@ -489,6 +497,7 @@ body::-webkit-scrollbar {
   font-size: 1rem;
   opacity: 0.85;
   margin-top: 4px;
+  white-space: normal;
 }
 
 /* Force the caption to sit below the name and center-align it */
