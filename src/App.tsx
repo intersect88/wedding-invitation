@@ -100,6 +100,9 @@ function App() {
               <button 
                 className="wedding-date" 
                 onClick={() => setShowCalendarMenu(!showCalendarMenu)}
+                aria-haspopup="menu"
+                aria-expanded={showCalendarMenu}
+                aria-label={`Aggiungi al calendario - 10 Giugno 2026`}
               >
                 <p className="date-label">
                   <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
@@ -110,32 +113,27 @@ function App() {
                 <p className="date">10 Giugno 2026</p>
                 <p className="date-label" style={{fontSize: '1.1rem', marginTop: '0.5rem'}}>Clicca per aggiungere al calendario</p>
               </button>
-              {showCalendarMenu && (
-                <div className="calendar-menu">
-                  <button onClick={addToGoogleCalendar} className="calendar-option">
+                {showCalendarMenu && (
+                <div className="calendar-menu" role="menu">
+                  <button onClick={addToGoogleCalendar} className="calendar-option" role="menuitem" aria-label="Aggiungi a Google Calendar">
                   {/* Google multicolor G (simplified) */}
                   <svg className="icon-svg google-g" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                    <defs>
-                      <linearGradient id="gGrad" x1="0%" x2="100%" y1="0%" y2="0%">
-                        <stop offset="0%" stopColor="#4285F4"/>
-                        <stop offset="35%" stopColor="#34A853"/>
-                        <stop offset="65%" stopColor="#FBBC05"/>
-                        <stop offset="100%" stopColor="#EA4335"/>
-                      </linearGradient>
-                    </defs>
-                    <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="700" fontSize="14" fill="url(#gGrad)">G</text>
+                    <path fill="#4285F4" d="M21.35 11.1h-1.7V9.4H12v5.2h5.7c-.25 1.1-.9 2.05-1.9 2.65v1.8h3.1c1.8-1.65 2.8-4.05 2.8-6.85 0-.6-.05-1.2-.15-1.95z"/>
+                    <path fill="#34A853" d="M12 21c2.43 0 4.47-.8 5.96-2.2l-3.1-1.85c-.85.57-1.9.9-2.86.9-2.2 0-4.05-1.47-4.7-3.44L2.6 16.9C4.6 19.9 8 21 12 21z"/>
+                    <path fill="#FBBC05" d="M6.3 12.45c-.2-.6-.3-1.25-.3-1.95s.1-1.35.3-1.95L3 7.1C2.15 8.9 1.7 10.9 1.7 13s.45 4.1 1.3 5.9l3-2.45z"/>
+                    <path fill="#EA4335" d="M12 4.5c1.32 0 2.5.45 3.4 1.35L18.9 5.5C16.95 3.6 14.6 2.7 12 2.7 8 2.7 4.6 3.8 2.6 6.8l3.3 2.65C7.95 8.1 9.8 4.5 12 4.5z"/>
                   </svg>
                   Google Calendar
                   </button>
-                  <button onClick={addToAppleCalendar} className="calendar-option">
-                    {/* Apple logo (monochrome) */}
+                   <button onClick={addToAppleCalendar} className="calendar-option" role="menuitem" aria-label="Scarica evento .ics per Apple Calendar">
+                    {/* Apple logo (monochrome from yesterday) */}
                     <svg className="icon-svg apple-g" viewBox="0 0 24 24" aria-hidden="true" role="img">
                       <path fill="#000000" d="M16.365 1.43c0 1.02-.37 1.98-1.03 2.73-.71.8-1.95 1.53-3.17 1.33-.13-1.06.34-2.12 1.1-2.82.74-.68 1.86-1.08 3.1-.97zM12.6 6.6c.29.02.62.03.98.02 2.25-.04 4.03 1.4 4.86 2.13.97.9 1.59 2.2 1.58 3.59-.02 2.13-1.47 3.68-3.3 3.68-.91 0-1.92-.4-2.76-.4-.85 0-1.92.41-2.76.41-1.83 0-3.3-1.55-3.32-3.7-.02-1.36.62-2.6 1.64-3.49.72-.64 2.08-1.95 3.78-1.97.53-.01 1.04.02 1.78.03z"/>
                     </svg>
                     Apple Calendar
                   </button>
-                  <button onClick={addToOutlookCalendar} className="calendar-option">
-                    {/* Outlook/Envelope style */}
+                   <button onClick={addToOutlookCalendar} className="calendar-option" role="menuitem" aria-label="Aggiungi a Outlook Calendar">
+                    {/* Outlook/Envelope style from yesterday */}
                     <svg className="icon-svg outlook-g" viewBox="0 0 24 24" aria-hidden="true" role="img">
                       <path fill="#0078D4" d="M22 7.5v9c0 .8-.7 1.5-1.5 1.5h-15C4.7 18 4 17.3 4 16.5v-9C4 6.7 4.7 6 5.5 6h15c.8 0 1.5.7 1.5 1.5z"/>
                       <path fill="#ffffff" d="M7 9h10v6H7z"/>
@@ -147,11 +145,12 @@ function App() {
             </div>
 
             <div className="links-section">
-              <a 
+               <a 
                 href="https://www.google.it/maps/place/Ammot+Caf%C3%A8/@40.9024271,14.0292486,17z/data=!3m1!4b1!4m6!3m5!1s0x133b1a751ea80751:0xe8b6cadf96c5a6c7!8m2!3d40.9024231!4d14.0314373!16s%2Fg%2F12hkmwfwy?coh=164777&entry=tt&shorturl=1" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="link-button venue-link"
+                aria-label="Apri Google Maps per Ammot"
               >
                 <div className="venue-content">
                   <div className="venue-inline">
@@ -161,16 +160,17 @@ function App() {
                     <span className="venue-name">Ammot</span>
                   </div>
                   <div className="venue-text">
-                    <p className="venue-note" style={{fontSize: '1.05rem', marginTop: '0.35rem', opacity: 0.85}}>Clicca per raggiungere il locale</p>
+                    <p className="venue-note" style={{fontSize: '1.05rem', marginTop: '0.15rem', opacity: 0.85}}>Clicca per raggiungere il locale</p>
                   </div>
                 </div>
               </a>
 
-              <a 
+               <a 
                 href="https://www.icloud.com/sharedalbum/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="link-button photo-link"
+                aria-label="Condividi le tue foto - iCloud Shared Album"
               >
                 <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 15.2c-2.5 0-4.6-2.1-4.6-4.6S9.5 6 12 6s4.6 2.1 4.6 4.6-2.1 4.6-4.6 4.6zM9 2L7.2 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.2L15 2H9z"/>
@@ -178,9 +178,12 @@ function App() {
                 Condividi le tue Foto
               </a>
 
-              <button 
+               <button 
                 className="link-button iban-link"
                 onClick={() => setShowIban(!showIban)}
+                aria-expanded={showIban}
+                aria-controls="iban-section"
+                aria-label="Mostra IBAN per il regalo di nozze"
               >
                 <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/>
@@ -188,8 +191,8 @@ function App() {
                 Regalo di Nozze
               </button>
 
-              {showIban && (
-                <div className="iban-section">
+               {showIban && (
+                <div className="iban-section" id="iban-section">
                   <p className="iban-label">IBAN per il regalo:</p>
                   <p className="iban-code">IT00 X000 0000 0000 0000 0000 000</p>
                   <p className="iban-note">Intestato a: Paudice Genny, Ornella Annunziata</p>

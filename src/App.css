@@ -444,23 +444,24 @@ body::-webkit-scrollbar {
 }
 
 .venue-content {
-  display: inline-flex; /* shrink to content so it sits inline and can be centered by the link */
+  /* Stack the name row and the caption vertically, centered within the button */
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 12px;
-  white-space: nowrap; /* keep icon and name on same line */
+  gap: 6px;
 }
 
 .venue-inline {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   white-space: nowrap;
 }
 
 .venue-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* keep name beside icon */
+  align-items: center; /* center the caption under the name */
 }
 
 .venue-name {
