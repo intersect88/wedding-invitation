@@ -382,6 +382,9 @@ body::-webkit-scrollbar {
   color: #3d6fa3; /* use the project's icon color */
 }
 
+/* Ensure the SVG path uses currentColor explicitly for all browsers */
+.google-g path { fill: currentColor; }
+
 .date-label {
   font-size: 1.8rem;
   color: #3d6fa3;
