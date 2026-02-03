@@ -373,6 +373,8 @@ body::-webkit-scrollbar {
   margin-right: 8px;
   display: inline-block;
   vertical-align: middle;
+  /* prevent icon shrinking and help vertical alignment in flex */
+  flex: 0 0 auto;
 }
 
 .google-g {
@@ -438,13 +440,16 @@ body::-webkit-scrollbar {
 .venue-content {
   display: flex;
   align-items: center;
+  justify-content: center; /* center icon+text horizontally inside the button */
   gap: 12px;
+  width: 100%;
 }
 
 .venue-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* center the text under the icon horizontally */
+  justify-content: center;
 }
 
 .venue-name {
@@ -691,6 +696,10 @@ body::-webkit-scrollbar {
   /* Venue button adjustments for better mobile readability */
   .venue-content {
     gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   .venue-name {
