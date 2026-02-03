@@ -151,6 +151,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="link-button venue-link"
                 aria-label="Apri Google Maps per Ammot"
+                style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}
               >
                 <div className="venue-row">
                   <svg className="icon-svg venue-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
