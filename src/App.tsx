@@ -115,10 +115,15 @@ function App() {
                   <button onClick={addToGoogleCalendar} className="calendar-option">
                   {/* Google multicolor G (simplified) */}
                   <svg className="icon-svg google-g" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                    <path fill="#4285F4" d="M21.35 11.1h-1.7V9.4H12v5.2h5.7c-.25 1.1-.9 2.05-1.9 2.65v1.8h3.1c1.8-1.65 2.8-4.05 2.8-6.85 0-.6-.05-1.2-.15-1.95z"/>
-                    <path fill="#34A853" d="M12 21c2.43 0 4.47-.8 5.96-2.2l-3.1-1.85c-.85.57-1.9.9-2.86.9-2.2 0-4.05-1.47-4.7-3.44L2.6 16.9C4.6 19.9 8 21 12 21z"/>
-                    <path fill="#FBBC05" d="M6.3 12.45c-.2-.6-.3-1.25-.3-1.95s.1-1.35.3-1.95L3 7.1C2.15 8.9 1.7 10.9 1.7 13s.45 4.1 1.3 5.9l3-2.45z"/>
-                    <path fill="#EA4335" d="M12 4.5c1.32 0 2.5.45 3.4 1.35L18.9 5.5C16.95 3.6 14.6 2.7 12 2.7 8 2.7 4.6 3.8 2.6 6.8l3.3 2.65C7.95 8.1 9.8 4.5 12 4.5z"/>
+                    <defs>
+                      <linearGradient id="gGrad" x1="0%" x2="100%" y1="0%" y2="0%">
+                        <stop offset="0%" stopColor="#4285F4"/>
+                        <stop offset="35%" stopColor="#34A853"/>
+                        <stop offset="65%" stopColor="#FBBC05"/>
+                        <stop offset="100%" stopColor="#EA4335"/>
+                      </linearGradient>
+                    </defs>
+                    <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="700" fontSize="14" fill="url(#gGrad)">G</text>
                   </svg>
                   Google Calendar
                   </button>
