@@ -444,9 +444,12 @@ body::-webkit-scrollbar {
 }
 
 .venue-name {
-  font-size: 1.7rem;
+  /* Match the primary button text exactly */
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
   line-height: 1;
-  font-weight: 800;
+  margin: 0;
 }
 
 .venue-note {
