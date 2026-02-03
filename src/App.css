@@ -453,9 +453,12 @@ body::-webkit-scrollbar {
 
 /* Ensure the venue-specific button stacks content vertically inside the button */
 .venue-link {
-  /* Make the venue link a block so internal elements can stack reliably */
+  /* Make the venue link a block so internal elements can stack reliably.
+     Increase padding/min-height so the caption naturally appears below the name. */
   display: block;
   text-align: center;
+  padding: 2rem 2.5rem; /* larger hit area */
+  min-height: 88px;
 }
 
 .venue-row {
@@ -465,6 +468,8 @@ body::-webkit-scrollbar {
   gap: 12px;
   width: 100%;
 }
+
+.venue-note { max-width: 75%; margin-left: auto; margin-right: auto; }
 
 /* ensure the venue-name doesn't allow excessive right margin */
 .venue-name { display: inline-block; margin-right: 0; }
