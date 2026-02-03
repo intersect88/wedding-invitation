@@ -381,11 +381,14 @@ body::-webkit-scrollbar {
   width: 1.25em;
   height: 1.25em;
   margin-right: 10px;
-  color: #3d6fa3; /* use the project's icon color */
+  /* allow multicolor fills */
 }
 
 /* Ensure the SVG path uses currentColor explicitly for all browsers */
-.google-g path { fill: currentColor; }
+.google-g path { vector-effect: non-scaling-stroke; }
+
+.apple-g { width: 1.2em; height: 1.2em; margin-right: 10px; }
+.outlook-g { width: 1.2em; height: 1.2em; margin-right: 10px; }
 
 .date-label {
   font-size: 1.8rem;
@@ -438,18 +441,21 @@ body::-webkit-scrollbar {
 }
 
 .venue-content {
+  display: inline-flex; /* shrink to content so it sits inline and can be centered by the link */
+  align-items: center;
+  gap: 12px;
+}
+
+.venue-inline {
   display: flex;
   align-items: center;
-  justify-content: center; /* center icon+text horizontally inside the button */
-  gap: 12px;
-  width: 100%;
+  gap: 8px;
 }
 
 .venue-text {
   display: flex;
   flex-direction: column;
-  align-items: center; /* center the text under the icon horizontally */
-  justify-content: center;
+  align-items: flex-start; /* keep name beside icon */
 }
 
 .venue-name {

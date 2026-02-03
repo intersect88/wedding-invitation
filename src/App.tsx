@@ -114,19 +114,23 @@ function App() {
                 <div className="calendar-menu">
                   <button onClick={addToGoogleCalendar} className="calendar-option">
                   <svg className="icon-svg google-g" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                    <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10 5.24 0 9.55-4.04 9.95-9.2h-9.95v4.6h5.4C19.7 17.14 16.2 20 12 20 7.58 20 4 16.42 4 12s3.58-8 8-8c2.21 0 4.21.9 5.66 2.34L17 8h-5v4h9l2-2.5C22.32 6.86 17.46 2 12 2z" />
+                    <path fill="#4285F4" d="M21.6 11.2v6.4c0 .9-.7 1.6-1.6 1.6H4c-.9 0-1.6-.7-1.6-1.6V6.4c0-.9.7-1.6 1.6-1.6h5.7v1.6H4v11.2h16v-4.1h-2.2V11.2h3.8z"/>
+                    <path fill="#34A853" d="M8 3.9c.9-.5 1.9-.9 3-.9 1 0 2.1.3 3 1l-1.5 1.4C11.8 5 10.9 4.9 10 4.9c-.8 0-1.6.1-2.4.4L8 3.9z"/>
+                    <path fill="#FBBC05" d="M19 8.4v1.2h-6.8v-3.4c1.2-.3 2.4-.3 3.6 0 1.1.3 2.2.9 3.2 2.2z"/>
+                    <path fill="#EA4335" d="M20.4 3.6l-1.6 1.6c-.9-.7-1.8-1.1-2.8-1.4 1.6-.6 3.3-.5 4.4.2z"/>
                   </svg>
                   Google Calendar
                   </button>
                   <button onClick={addToAppleCalendar} className="calendar-option">
-                    <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                    <svg className="icon-svg apple-g" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                      <path fill="#000" d="M16.365 1.43c0 1.02-.37 1.98-1.03 2.73-.71.8-1.95 1.53-3.17 1.33-.13-1.06.34-2.12 1.1-2.82.74-.68 1.86-1.08 3.1-.97zM12.6 6.6c.29.02.62.03.98.02 2.25-.04 4.03 1.4 4.86 2.13.97.9 1.59 2.2 1.58 3.59-.02 2.13-1.47 3.68-3.3 3.68-.91 0-1.92-.4-2.76-.4-.85 0-1.92.41-2.76.41-1.83 0-3.3-1.55-3.32-3.7-.02-1.36.62-2.6 1.64-3.49.72-.64 2.08-1.95 3.78-1.97.53-.01 1.04.02 1.78.03z"/>
                     </svg>
                     Apple Calendar
                   </button>
                   <button onClick={addToOutlookCalendar} className="calendar-option">
-                    <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    <svg className="icon-svg outlook-g" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                      <path fill="#0078D4" d="M22 7.5v9c0 .8-.7 1.5-1.5 1.5h-15C4.7 18 4 17.3 4 16.5v-9C4 6.7 4.7 6 5.5 6h15c.8 0 1.5.7 1.5 1.5z"/>
+                      <path fill="#fff" d="M7 9h10v6H7z"/>
                     </svg>
                     Outlook Calendar
                   </button>
@@ -142,11 +146,13 @@ function App() {
                 className="link-button venue-link"
               >
                 <div className="venue-content">
-                  <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                  </svg>
-                  <div className="venue-text">
+                  <div className="venue-inline">
+                    <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
                     <span className="venue-name">Ammot</span>
+                  </div>
+                  <div className="venue-text">
                     <p className="venue-note" style={{fontSize: '1.05rem', marginTop: '0.35rem', opacity: 0.85}}>Clicca per raggiungere il locale</p>
                   </div>
                 </div>
