@@ -462,6 +462,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   align-items: center; /* center the caption under the name */
+  width: 100%;
 }
 
 .venue-name {
@@ -477,6 +478,14 @@ body::-webkit-scrollbar {
   font-size: 1rem;
   opacity: 0.85;
   margin-top: 4px;
+}
+
+/* Force the caption to sit below the name and center-align it */
+.venue-text .venue-note {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0.15rem 0 0 0;
 }
 
 /* remove venue-location (we removed the element in JSX) */
@@ -709,6 +718,7 @@ body::-webkit-scrollbar {
   .venue-content {
     gap: 8px;
     display: flex;
+    flex-direction: column; /* keep caption below the name on small screens */
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -721,6 +731,11 @@ body::-webkit-scrollbar {
   .venue-location {
     font-size: 0.95rem;
     opacity: 0.95;
+  }
+
+  .venue-note {
+    text-align: center;
+    margin-top: 0.15rem;
   }
   
   .wedding-date {
