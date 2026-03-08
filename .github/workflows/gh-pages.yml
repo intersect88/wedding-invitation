@@ -31,6 +31,8 @@ jobs:
       - name: Build
         run: npm run build
 
+      # Debug steps removed to keep workflow logs clean
+
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
