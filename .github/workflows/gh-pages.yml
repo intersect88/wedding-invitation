@@ -30,7 +30,8 @@ jobs:
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Use the PAT stored in repository secrets so commits are attributed to your user
+          github_token: ${{ secrets.DEPLOY_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages
           # Ensure the custom domain is written to the gh-pages branch
