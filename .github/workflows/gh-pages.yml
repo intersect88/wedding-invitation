@@ -13,6 +13,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # prevent checkout from persisting the default GITHUB_TOKEN credentials
+          # so the action can use the provided personal token for pushing
+          persist-credentials: false
 
       - name: Use Node.js
         uses: actions/setup-node@v4
@@ -30,8 +34,9 @@ jobs:
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          # Use the PAT stored in repository secrets so commits are attributed to your user
-          github_token: ${{ secrets.DEPLOY_TOKEN }}
+          # Use the personal token (PAT) stored in repository secrets so commits
+          # are attributed to your user instead of github-actions[bot]
+          personal_token: ${{ secrets.DEPLOY_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages
           # Ensure the custom domain is written to the gh-pages branch
