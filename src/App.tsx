@@ -111,7 +111,7 @@ function App() {
                   </svg>
                   Il giorno
                 </p>
-                <p className="date">10 Giugno 2026 ore 19:00</p>
+                <p className="date">10 Giugno 2026<br />ore 19:00</p>
                 <p className="date-label" style={{fontSize: '1.1rem', marginTop: '0.5rem'}}>Clicca per aggiungere al calendario</p>
               </button>
                 {showCalendarMenu && (
