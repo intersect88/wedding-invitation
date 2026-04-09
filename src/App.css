@@ -394,10 +394,22 @@ body::-webkit-scrollbar {
   width: 1.5em;
   height: 1.5em;
   margin-right: 12px;
+  flex: 0 0 1.5em;
 }
 
-.apple-g { width: 1.2em; height: 1.2em; margin-right: 10px; }
-.outlook-g { width: 1.2em; height: 1.2em; margin-right: 10px; }
+.apple-g {
+  width: 1.3em;
+  height: 1.3em;
+  margin-right: 10px;
+  flex: 0 0 1.3em;
+}
+
+.outlook-g {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 10px;
+  flex: 0 0 1.5em;
+}
 
 .date-label {
   font-size: 1.8rem;

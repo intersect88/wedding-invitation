@@ -88,7 +88,7 @@ function App() {
           <div className="card-inside">
           <div className="card-content">
             <h2 className="welcome-message">Con grande gioia</h2>
-            <p className="subtitle">vi invitiamo a celebrare con noi</p>
+            <p className="subtitle">vi invitiamo al nostro matrimonio</p>
             
             <div className="couple-names">
               <h3>Ornella</h3>
@@ -116,27 +116,34 @@ function App() {
                 {showCalendarMenu && (
                 <div className="calendar-menu" role="menu">
                   <button onClick={addToGoogleCalendar} className="calendar-option" role="menuitem" aria-label="Aggiungi a Google Calendar">
-                  {/* Google multicolor G (simplified) */}
-                  <svg className="icon-svg google-g" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                    <path fill="#4285F4" d="M21.35 11.1h-1.7V9.4H12v5.2h5.7c-.25 1.1-.9 2.05-1.9 2.65v1.8h3.1c1.8-1.65 2.8-4.05 2.8-6.85 0-.6-.05-1.2-.15-1.95z"/>
-                    <path fill="#34A853" d="M12 21c2.43 0 4.47-.8 5.96-2.2l-3.1-1.85c-.85.57-1.9.9-2.86.9-2.2 0-4.05-1.47-4.7-3.44L2.6 16.9C4.6 19.9 8 21 12 21z"/>
-                    <path fill="#FBBC05" d="M6.3 12.45c-.2-.6-.3-1.25-.3-1.95s.1-1.35.3-1.95L3 7.1C2.15 8.9 1.7 10.9 1.7 13s.45 4.1 1.3 5.9l3-2.45z"/>
-                    <path fill="#EA4335" d="M12 4.5c1.32 0 2.5.45 3.4 1.35L18.9 5.5C16.95 3.6 14.6 2.7 12 2.7 8 2.7 4.6 3.8 2.6 6.8l3.3 2.65C7.95 8.1 9.8 4.5 12 4.5z"/>
-                  </svg>
-                  Google Calendar
+                    {/* Official Google "G" logo */}
+                    <svg className="icon-svg google-g" viewBox="0 0 48 48" aria-hidden="true" role="img">
+                      <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                      <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+                      <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+                      <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+                      <path fill="none" d="M0 0h48v48H0z"/>
+                    </svg>
+                    Google Calendar
                   </button>
-                   <button onClick={addToAppleCalendar} className="calendar-option" role="menuitem" aria-label="Scarica evento .ics per Apple Calendar">
-                    {/* Apple logo (monochrome from yesterday) */}
-                    <svg className="icon-svg apple-g" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                      <path fill="#000000" d="M16.365 1.43c0 1.02-.37 1.98-1.03 2.73-.71.8-1.95 1.53-3.17 1.33-.13-1.06.34-2.12 1.1-2.82.74-.68 1.86-1.08 3.1-.97zM12.6 6.6c.29.02.62.03.98.02 2.25-.04 4.03 1.4 4.86 2.13.97.9 1.59 2.2 1.58 3.59-.02 2.13-1.47 3.68-3.3 3.68-.91 0-1.92-.4-2.76-.4-.85 0-1.92.41-2.76.41-1.83 0-3.3-1.55-3.32-3.7-.02-1.36.62-2.6 1.64-3.49.72-.64 2.08-1.95 3.78-1.97.53-.01 1.04.02 1.78.03z"/>
+                  <button onClick={addToAppleCalendar} className="calendar-option" role="menuitem" aria-label="Scarica evento .ics per Apple Calendar">
+                    {/* Apple logo — proper shape with leaf */}
+                    <svg className="icon-svg apple-g" viewBox="0 0 814 1000" aria-hidden="true" role="img">
+                      <path fill="#000000" d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-37.5-155.5-98.8c-58.1-72.4-105.2-196.4-105.2-313.8 0-197.1 99-333.6 267-333.6 74 0 136.7 48.5 181.1 48.5 42.8 0 114.5-51.7 196-51.7 31.4 0 114.5 2.9 168.1 83.2zm-127.8-147.4c18.6-22 32-52.7 32-83.4 0-4.2-.3-8.5-1-12.7-30.6 1.2-67.1 20.4-89.5 44.9-18 19.9-34.4 51.3-34.4 82.4 0 4.6.7 9.2 1 10.7 1.9.3 5.1.7 8.3.7 27.8 0 62.1-18.3 83.6-42.6z"/>
                     </svg>
                     Apple Calendar
                   </button>
-                   <button onClick={addToOutlookCalendar} className="calendar-option" role="menuitem" aria-label="Aggiungi a Outlook Calendar">
-                    {/* Outlook/Envelope style from yesterday */}
-                    <svg className="icon-svg outlook-g" viewBox="0 0 24 24" aria-hidden="true" role="img">
-                      <path fill="#0078D4" d="M22 7.5v9c0 .8-.7 1.5-1.5 1.5h-15C4.7 18 4 17.3 4 16.5v-9C4 6.7 4.7 6 5.5 6h15c.8 0 1.5.7 1.5 1.5z"/>
-                      <path fill="#ffffff" d="M7 9h10v6H7z"/>
+                  <button onClick={addToOutlookCalendar} className="calendar-option" role="menuitem" aria-label="Aggiungi a Outlook Calendar">
+                    {/* Official Microsoft Outlook icon */}
+                    <svg className="icon-svg outlook-g" viewBox="0 0 48 48" aria-hidden="true" role="img">
+                      <path fill="#1976D2" d="M28 10h14a2 2 0 0 1 2 2v24a2 2 0 0 1-2 2H28V10z"/>
+                      <path fill="#42A5F5" d="M28 10v28l-4-2V12l4-2z"/>
+                      <path fill="#90CAF9" d="M44 22H28v4h16v-4z"/>
+                      <path fill="#1976D2" d="M44 16H28v4h16v-4z"/>
+                      <path fill="#90CAF9" d="M44 28H28v4h16v-4z"/>
+                      <path fill="#42A5F5" d="M44 34H28v4h16v-4z"/>
+                      <rect x="4" y="8" width="24" height="32" rx="3" fill="#1565C0"/>
+                      <path fill="#fff" d="M16 16c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 13c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z"/>
                     </svg>
                     Outlook Calendar
                   </button>
@@ -191,7 +198,7 @@ function App() {
                {showIban && (
                 <div className="iban-section" id="iban-section">
                   <p className="iban-label">IBAN per il regalo:</p>
-                  <p className="iban-code">IT00 X000 0000 0000 0000 0000 000</p>
+                  <p className="iban-code">IT13K0538739840000003548644</p>
                   <p className="iban-note">Intestato a: Paudice Genny, Ornella Annunziata</p>
                 </div>
               )}
