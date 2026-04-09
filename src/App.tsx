@@ -6,6 +6,7 @@ import beachBackgroundMobile from './assets/beach-background-mobile.png'
 function App() {
   const [isOpen, setIsOpen] = useState(false)
   const [showIban, setShowIban] = useState(false)
+  const [showPhoto, setShowPhoto] = useState(false)
   const [showCalendarMenu, setShowCalendarMenu] = useState(false)
 
   const handleOpen = () => {
@@ -170,15 +171,23 @@ function App() {
               </a>
 
                <button
-                className="link-button photo-link photo-link--disabled"
-                onClick={() => alert('Coming soon...')}
-                aria-label="Condividi le tue foto - disponibile presto"
+                className="link-button photo-link"
+                onClick={() => setShowPhoto(!showPhoto)}
+                aria-expanded={showPhoto}
+                aria-controls="photo-section"
+                aria-label="Condividi le tue foto"
               >
                 <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 15.2c-2.5 0-4.6-2.1-4.6-4.6S9.5 6 12 6s4.6 2.1 4.6 4.6-2.1 4.6-4.6 4.6zM9 2L7.2 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.2L15 2H9z"/>
                 </svg>
                 Condividi le tue Foto
               </button>
+
+               {showPhoto && (
+                <div className="iban-section" id="photo-section">
+                  <p className="iban-label">In aggiornamento...</p>
+                </div>
+              )}
 
                <button 
                 className="link-button iban-link"
