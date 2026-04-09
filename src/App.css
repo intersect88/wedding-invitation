@@ -811,25 +811,26 @@ body::-webkit-scrollbar {
   
   .iban-section {
     background: rgba(255, 255, 255, 0.7);
-    padding: 1rem;
+    padding: 0.8rem;
   }
   
   .iban-label {
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
   }
 
   .iban-code {
-    font-size: 0.95rem;
+    font-size: 0.78rem;
     font-family: Arial, sans-serif;
     font-weight: 700;
-    word-break: break-all;
-    letter-spacing: 0.02em;
+    word-break: keep-all;
+    white-space: nowrap;
+    letter-spacing: 0;
   }
 
   .iban-note {
-    font-size: 0.9rem;
+    font-size: 0.78rem;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
   }

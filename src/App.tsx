@@ -203,12 +203,12 @@ function App() {
               </button>
 
                {showIban && (
-                <div className="iban-section" id="iban-section">
-                  <p className="iban-label">Destinazione felicità:</p>   
-                  <p className="iban-label">Il regalo più bello sarà il nostro viaggio di nozze</p>
-                  <p className="iban-code" style={{fontFamily: 'Arial, sans-serif'}}>IBAN: IT13K0538739840000003548644</p>
-                  <p className="iban-note">Intestato a: Paudice Genny, Ornella Annunziata</p>
-                </div>
+                 <div className="iban-section" id="iban-section">
+                   <p className="iban-label">Destinazione felicità:</p>   
+                   <p className="iban-label">Il regalo più bello sarà il nostro viaggio di nozze</p>
+                   <p className="iban-code" style={{fontFamily: 'Arial, sans-serif'}}>IT13K0538739840000003548644</p>
+                   <p className="iban-note">Intestato a: Paudice Genny & Ornella Annunziata</p>
+                 </div>
               )}
             </div>
 
