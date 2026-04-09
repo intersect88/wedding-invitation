@@ -16,7 +16,7 @@ function App() {
   const addToGoogleCalendar = () => {
     const event = {
       text: 'Matrimonio Ornella & Genny',
-      dates: '20260610T180000/20260611T020000',
+      dates: '20260610T190000/20260610T230000',
       details: 'Celebrazione del matrimonio presso Ammot - Castel Volturno (CE)',
       location: 'Ammot Cafè, Castel Volturno (CE)'
     }
@@ -30,8 +30,8 @@ function App() {
       title: 'Matrimonio Ornella & Genny',
       description: 'Celebrazione del matrimonio presso Ammot - Castel Volturno (CE)',
       location: 'Ammot Cafè, Castel Volturno (CE)',
-      startDate: '2026-06-10T18:00:00',
-      endDate: '2026-06-11T02:00:00'
+      startDate: '2026-06-10T19:00:00',
+      endDate: '2026-06-10T23:00:00'
     }
     
     const icsContent = [
@@ -60,8 +60,8 @@ function App() {
   const addToOutlookCalendar = () => {
     const event = {
       subject: 'Matrimonio Ornella & Genny',
-      startdt: '2026-06-10T18:00:00',
-      enddt: '2026-06-11T02:00:00',
+      startdt: '2026-06-10T19:00:00',
+      enddt: '2026-06-10T23:00:00',
       body: 'Celebrazione del matrimonio presso Ammot - Castel Volturno (CE)',
       location: 'Ammot Cafè, Castel Volturno (CE)'
     }
@@ -111,7 +111,7 @@ function App() {
                   </svg>
                   Il giorno
                 </p>
-                <p className="date">10 Giugno 2026</p>
+                <p className="date">10 Giugno 2026 · ore 19:00</p>
                 <p className="date-label" style={{fontSize: '1.1rem', marginTop: '0.5rem'}}>Clicca per aggiungere al calendario</p>
               </button>
                 {showCalendarMenu && (
