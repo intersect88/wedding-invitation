@@ -569,7 +569,7 @@ body::-webkit-scrollbar {
 
 .iban-section {
   padding: 1.8rem;
-  background: rgba(255, 255, 255, 0.7);
+  background: transparent;
   border-radius: 10px;
   margin-top: 0.5rem;
   animation: slideDown 0.3s ease-out;
@@ -810,7 +810,7 @@ body::-webkit-scrollbar {
   }
   
   .iban-section {
-    background: rgba(255, 255, 255, 0.7);
+    background: transparent;
     padding: 0.8rem;
   }
   
