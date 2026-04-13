@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background: soft light blue-grey -->
+  <rect width="1200" height="630" fill="#d6e8f0"/>
+
+  <!-- Soft watercolor blobs -->
+  <ellipse cx="300" cy="200" rx="320" ry="220" fill="rgba(180,215,230,0.5)"/>
+  <ellipse cx="800" cy="420" rx="380" ry="200" fill="rgba(190,220,235,0.45)"/>
+  <ellipse cx="600" cy="315" rx="500" ry="260" fill="rgba(230,242,248,0.55)"/>
+
+  <!-- Top-right corner decoration (starfish shape) -->
+  <g transform="translate(1050,60) rotate(20)" opacity="0.55">
+    <polygon points="0,-55 13,-18 52,-18 22,7 33,45 0,22 -33,45 -22,7 -52,-18 -13,-18" fill="#c8a97a"/>
+  </g>
+  <!-- Top-left shell suggestion -->
+  <ellipse cx="120" cy="100" rx="75" ry="55" fill="rgba(220,210,195,0.6)" transform="rotate(-30,120,100)"/>
+  <ellipse cx="120" cy="100" rx="60" ry="42" fill="rgba(235,225,210,0.5)" transform="rotate(-30,120,100)"/>
+
+  <!-- Bottom-left shell suggestion -->
+  <ellipse cx="160" cy="530" rx="90" ry="60" fill="rgba(215,205,188,0.55)" transform="rotate(15,160,530)"/>
+  <ellipse cx="160" cy="530" rx="70" ry="45" fill="rgba(232,222,205,0.45)" transform="rotate(15,160,530)"/>
+
+  <!-- White frosted card area in the centre -->
+  <rect x="180" y="130" width="840" height="370" rx="24" fill="rgba(255,255,255,0.38)"/>
+
+  <!-- Ornella & Genny — small elegant line above -->
+  <text
+    x="600" y="255"
+    text-anchor="middle"
+    font-family="'Great Vibes', cursive"
+    font-size="72"
+    fill="#3d6fa3"
+    opacity="0.75"
+  >Ornella &amp; Genny</text>
+
+  <!-- Main headline -->
+  <text
+    x="600" y="375"
+    text-anchor="middle"
+    font-family="'Great Vibes', cursive"
+    font-size="108"
+    fill="#2d5a8e"
+    letter-spacing="2"
+  >Sei invitato al nostro matrimonio</text>
+
+  <!-- Date line -->
+  <text
+    x="600" y="445"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="32"
+    fill="#3d6fa3"
+    letter-spacing="4"
+    font-style="italic"
+  >10 Giugno 2026 · Ammot Cafè, Castel Volturno</text>
+</svg>
