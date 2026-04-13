@@ -784,7 +784,7 @@ body::-webkit-scrollbar {
   .link-button {
     padding: 1.1rem 1.2rem;
     font-size: 1.15rem;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.4);
     color: #254a78;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -815,7 +815,7 @@ body::-webkit-scrollbar {
   }
   
   .wedding-date {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.4);
   }
   
   .iban-section {
