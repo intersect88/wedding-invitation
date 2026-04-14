@@ -836,33 +836,41 @@ body::-webkit-scrollbar {
   
   .iban-label {
     font-size: 1.1rem;
+    color: #2d5080;
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.9), -1px -1px 3px rgba(255,255,255,0.8);
   }
 
   .iban-prefix {
     font-size: 1rem;
+    color: #3d6fa3;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     margin: 0.4rem 0 0.1rem 0;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
   }
 
   .iban-code {
     font-size: 1.2rem;
     font-family: Arial, sans-serif;
+    color: #3d6fa3;
     font-weight: 700;
     word-break: break-all;
     white-space: normal;
     letter-spacing: 0;
     margin: 0 0 0.4rem 0;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
   }
 
   .iban-note {
     font-size: 1.1rem;
+    color: #2d5080;
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.9), -1px -1px 3px rgba(255,255,255,0.8);
   }
 
   .footer-message {
