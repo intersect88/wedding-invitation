@@ -623,6 +623,16 @@ body::-webkit-scrollbar {
   text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
 }
 
+/* Break helper: hidden on desktop, visible on mobile */
+.iban-br {
+  display: none;
+}
+@media (max-width: 480px) {
+  .iban-br {
+    display: inline;
+  }
+}
+
 .footer-message {
   margin-top: 2rem;
   font-size: 2.2rem;
