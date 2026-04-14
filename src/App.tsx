@@ -184,10 +184,10 @@ function App() {
               </button>
 
                {showPhoto && (
-                <div className="iban-section" id="photo-section">
-                  <p className="iban-label">In aggiornamento...</p>
-                </div>
-              )}
+                 <div className="iban-section" id="photo-section" style={{background: 'transparent'}}>
+                   <p className="iban-label">In aggiornamento...</p>
+                 </div>
+               )}
 
                <button 
                 className="link-button iban-link"
