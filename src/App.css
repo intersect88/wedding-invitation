@@ -837,7 +837,8 @@ body::-webkit-scrollbar {
   .iban-label {
     font-size: 1.1rem;
     font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-style: italic;
+    font-weight: 900;
   }
 
   .iban-prefix {
@@ -860,7 +861,8 @@ body::-webkit-scrollbar {
   .iban-note {
     font-size: 1.1rem;
     font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-style: italic;
+    font-weight: 900;
   }
 
   .footer-message {
