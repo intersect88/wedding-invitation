@@ -214,6 +214,7 @@ function App() {
             </div>
 
             <p className="footer-message">Non vediamo l'ora di festeggiare con voi!</p>
+            <p className="footer-rsvp">E' gradita gentile conferma di partecipazione</p>
           </div>
         </div>
       </div>

@@ -649,6 +649,20 @@ body::-webkit-scrollbar {
   line-height: 1.4;
 }
 
+.footer-rsvp {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #3d6fa3;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 1px 1px 4px rgba(255,255,255,1);
+  background: transparent;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .container {
@@ -709,6 +723,10 @@ body::-webkit-scrollbar {
     font-size: 2.4rem;
     font-family: 'Playfair Display', serif;
     font-weight: 800;
+  }
+
+  .footer-rsvp {
+    font-size: 1rem;
   }
   
   .shell-1, .shell-2, .shell-3 {
@@ -879,6 +897,10 @@ body::-webkit-scrollbar {
     font-weight: 800;
     font-family: 'Playfair Display', serif;
     background: transparent;
+  }
+
+  .footer-rsvp {
+    font-size: 0.85rem;
   }
   
   .shell-1, .shell-2, .shell-3 {
