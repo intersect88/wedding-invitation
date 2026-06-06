@@ -6,7 +6,6 @@ import beachBackgroundMobile from './assets/beach-background-mobile.png'
 function App() {
   const [isOpen, setIsOpen] = useState(false)
   const [showIban, setShowIban] = useState(false)
-  const [showPhoto, setShowPhoto] = useState(false)
   const [showCalendarMenu, setShowCalendarMenu] = useState(false)
 
   const handleOpen = () => {
@@ -170,33 +169,18 @@ function App() {
                 <p className="venue-note" style={{fontSize: '1.05rem', marginTop: '0.35rem', opacity: 0.85}}>Clicca per raggiungere il locale</p>
               </a>
 
-               <button
-                className="link-button photo-link"
-                onClick={() => setShowPhoto(!showPhoto)}
-                aria-expanded={showPhoto}
-                aria-controls="photo-section"
-                aria-label="Condividi le tue foto"
-              >
-                <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 15.2c-2.5 0-4.6-2.1-4.6-4.6S9.5 6 12 6s4.6 2.1 4.6 4.6-2.1 4.6-4.6 4.6zM9 2L7.2 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.2L15 2H9z"/>
-                </svg>
-                Condividi le tue Foto
-              </button>
-
-               {showPhoto && (
-                 <div className="iban-section" id="photo-section" style={{background: 'transparent'}}>
-                   <a
-                     href="https://photos.app.goo.gl/xigeyCD8UxXSew638"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     className="iban-label"
-                     style={{display: 'block', textDecoration: 'none', cursor: 'pointer'}}
-                     aria-label="Apri album Google Foto"
-                   >
-                     Condividi le tue Foto
-                   </a>
-                 </div>
-               )}
+               <a
+                 href="https://photos.app.goo.gl/xigeyCD8UxXSew638"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="link-button photo-link"
+                 aria-label="Condividi le tue foto"
+               >
+                 <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                   <path d="M12 15.2c-2.5 0-4.6-2.1-4.6-4.6S9.5 6 12 6s4.6 2.1 4.6 4.6-2.1 4.6-4.6 4.6zM9 2L7.2 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.2L15 2H9z"/>
+                 </svg>
+                 Condividi le tue Foto
+               </a>
 
                <button 
                 className="link-button iban-link"
