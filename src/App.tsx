@@ -169,18 +169,16 @@ function App() {
                 <p className="venue-note" style={{fontSize: '1.05rem', marginTop: '0.35rem', opacity: 0.85}}>Clicca per raggiungere il locale</p>
               </a>
 
-               <a
-                 href="https://photos.app.goo.gl/xigeyCD8UxXSew638"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 className="link-button photo-link"
+               <span
+                 className="link-button photo-link photo-link--disabled"
+                 style={{pointerEvents: 'none'}}
                  aria-label="Condividi le tue foto"
                >
                  <svg className="icon-svg" viewBox="0 0 24 24" fill="currentColor">
                    <path d="M12 15.2c-2.5 0-4.6-2.1-4.6-4.6S9.5 6 12 6s4.6 2.1 4.6 4.6-2.1 4.6-4.6 4.6zM9 2L7.2 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.2L15 2H9z"/>
                  </svg>
                  Condividi le tue Foto
-               </a>
+               </span>
 
                <button 
                 className="link-button iban-link"
